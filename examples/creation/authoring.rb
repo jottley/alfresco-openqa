@@ -45,7 +45,10 @@ class Authoring
 		puts "Starting test.."
 		start_time = Time.now
 		
+		#use this for internet explorer
+		#ie = Watir::IE.new
 		#ie.speed = :fast
+		#use this for firefox
     ie = Firefox.new(:port => port, :profile=> profile, :multiple_browser_xpi => true)
     ie.goto("http://10.0.1.11/alfresco/faces/jsp/login.jsp")
     
