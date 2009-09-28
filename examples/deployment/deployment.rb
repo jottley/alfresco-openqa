@@ -290,7 +290,7 @@ class Deployment
       
       #In some releases of Alfresco (i.e. 3.1.1) the list of snapshots is reveresed
       if (reverse == true)
-        snapshotLinks = snapshotLinks.reverse  
+        snapshotLinks.reverse!  
       end
       
       #snapshotLinks.reverse_each {
